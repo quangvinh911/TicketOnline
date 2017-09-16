@@ -1,0 +1,20 @@
+﻿#search{
+    margin-right:-65px;
+    padding:0 10px 0 10px;
+    width:30px;
+    height:36px;
+    float:left;
+}
+#search:hover
+{
+    text-decoration:none;
+    color:#7CB342;
+}
+#txtTimKiem {
+    float:left;
+    margin-left:5%;
+}
+#txtTimKiem input{
+     height:0;
+     
+}

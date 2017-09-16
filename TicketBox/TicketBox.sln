@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketBox", "TicketBox\TicketBox.csproj", "{555DC7A8-6BAE-46A5-8717-CA5B7EBC0E8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketBox.Tests", "TicketBox.Tests\TicketBox.Tests.csproj", "{A4390877-B53D-4365-A10A-BA84DBB34CAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{555DC7A8-6BAE-46A5-8717-CA5B7EBC0E8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555DC7A8-6BAE-46A5-8717-CA5B7EBC0E8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555DC7A8-6BAE-46A5-8717-CA5B7EBC0E8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555DC7A8-6BAE-46A5-8717-CA5B7EBC0E8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4390877-B53D-4365-A10A-BA84DBB34CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4390877-B53D-4365-A10A-BA84DBB34CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4390877-B53D-4365-A10A-BA84DBB34CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4390877-B53D-4365-A10A-BA84DBB34CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
