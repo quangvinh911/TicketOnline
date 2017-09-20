@@ -10,36 +10,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Ticket Onlline</title>
 	<link rel="stylesheet" href="~/SimpleSlider/css/slider.css">
-    <link href="~/Assets/admin/css/half-slider.css" rel="stylesheet" />
+    <link href="/Assets/admin/css/half-slider.css" rel="stylesheet" />
     <!-- Bootstrap core CSS -->
-    <link href="/Assets/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Assets/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="/Assets/admin/css/2-col-portfolio.css" rel="stylesheet">
-    <link href="~/Assets/admin/css/Layout.css" rel="stylesheet" />
-    <link href="/Assets/admin/image/person72.png" rel="stylesheet" />
+    <link href="~/Assets/admin/css/2-col-portfolio.css" rel="stylesheet">
+    <link href="~/Assets/admin/image/person72.png" rel="stylesheet" />
+    <link href="~/Assets/admin/css/StyleSheet1.css" rel="stylesheet" />
     <link href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-
-            <img src="image/ticket.png" alt="Alternate Text" height="50" width="50" />
-            <a class="navbar-brand" href="#" >Ticket Online</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-           <div id="Tim-Kiem">
+            <img src=" /image/ticket.png" alt="Alternate Text" height="50" width="50" />
+            <a class="navbar-brand" @Html.ActionLink("Ticket Online", "Index", "Home")</a>
+            <div id="Tim-Kiem">
                @using (Html.BeginForm("KqTimKiem"))
                {
-                   @Html.TextBox("txtTimKiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", placeholder = "Nhập vào từ khóa cần tìm ..." });
+                   @Html.TextBox("txtTimKiem", "", htmlAttributes: new { @class = "TextBoxTimKiem", placeholder = "Nhập vào từ khóa cần tìm..." });
                    @*<div id="divHinhAnhTimKiem"><button type="submit"><img src="~/IMG/imgSearch.png" /> </button></div>*@
-               <div id="search">
-                   <i class="fa fa-search"></i>
-               </div>
+                                   <div id="search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
                }
            </div>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -63,13 +58,17 @@
                         <a class="nav-link" href="#">Đăng Nhập</a>
                     </li>*@
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Đăng nhập </a>
+                        <a class="nav-link"
+                           @Html.ActionLink("Đăng Nhập", "DangNhap", "DangNhap")
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Đăng ký </a>
+                        <a class="nav-link" 
+                           @Html.ActionLink("Đăng Ký", "DangKy", "DangKy")</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tạo sự kiện</a>
+                        <a class="nav-link" 
+                           @Html.ActionLink("Tạo Sự Kiện", "TaoSuKien", "TaoSuKien")</a>
                     </li>
                 </ul>
             </div>
@@ -120,7 +119,6 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
         <div class="container">
-            
             <p class="m-0 text-center text-white">Copyright &copy; TicketOnline</p>
         </div>
         <!-- /.container -->

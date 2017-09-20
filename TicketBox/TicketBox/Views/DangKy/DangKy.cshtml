@@ -1,0 +1,103 @@
+﻿@model TicketBox.Models.TicketBox_dbModel
+@{
+    ViewBag.Title = "DangKy";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/Assets/admin/vendor/jquery/jquery.js"></script>
+<link href="~/Content/css/CSSDangKy.css" rel="stylesheet" />
+<link href="~/Content/css/StyleSheet1.css" rel="stylesheet" />
+ <!--this was made my Agil Asadi. You are free to delete this comment line and use it as you wish-->
+<div class="container-fluid top-nav text-right"><a href="#" class="text-uppercase" data-toggle="modal" data-target="#login-modal">Login</a><a class="text-uppercase" href="#" data-toggle="modal" data-target="#register-modal">Register</a></div>
+<div id="login-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog margin-auto">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-center text-uppercase">Login to Your Account</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-control btn-primary" value="Login">
+                    </div>
+                </form>
+                <p><a class="small modal-links" href="#" data-dismiss="modal" data-toggle="modal" data-target="#register-modal">Register</a><a class="small modal-links" href="#" data-dismiss="modal" data-toggle="modal" data-target="#forget-modal">Forget Password</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="register-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog margin-auto">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-center text-uppercase">Register to Your Account</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="form-control btn-primary" value="Login">
+                    </div>
+                </form>
+                <p><a class="small modal-links" href="#" data-dismiss="modal" data-toggle="modal" data-target="#login-modal">Login</a><a class="small modal-links" href="#" data-dismiss="modal" data-toggle="modal" data-target="#forget-modal">Forget Password</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="forget-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog margin-auto">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-center text-uppercase">Forget Your Password</h2>
+                <form>
+                    <p class="small">Enter your Email Address that you used to register. We'll send you an email with your username and a link to reset your password.</p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="email" placeholder="Email">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="login-box">
+    <h4>Đăng Ký</h4>
+        <div class="login-body">
+            <div class="form-group">
+                @Html.LabelFor(model => model.TenTaiKhoan)
+                <input type="text" placeholder="Tài khoản của bạn" class="form-control" />
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.MatKhau)
+                <input type="text" placeholder="Mật khẩu" class="form-control" />
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email)
+                <input type="text" placeholder="Email của bạn là gì" class="form-control" />
+            </div>
+            @Html.LabelFor(model => model.NgaySinh)
+            <div class="form-group">
+                @Html.EditorFor(model => model.NgaySinh)
+                @Html.ValidationMessageFor(model => model.NgaySinh)
+            </div>
+            <div class="login-footer">
+                <p><input type="submit" value="Xác Nhận" /></p>
+                @Html.ActionLink("Đăng Nhập", "DangNhap", "DangNhap")
+            </div>
+        </div>
+ </div>
