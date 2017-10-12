@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TicketOnlineModelStoreContainer" CdmEntityContainer="TicketOnlineEntities">
+    <EntitySetMapping Name="SuKiens">
+      <EntityTypeMapping TypeName="TicketOnlineModel.SuKien">
+        <MappingFragment StoreEntitySet="SuKien">
+          <ScalarProperty Name="GioBatDauSK" ColumnName="GioBatDauSK" />
+          <ScalarProperty Name="NgayToChuc" ColumnName="NgayToChuc" />
+          <ScalarProperty Name="MaSK" ColumnName="MaSK" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenSK" ColumnName="TenSK" />
+          <ScalarProperty Name="DiaDiem" ColumnName="DiaDiem" />
+          <ScalarProperty Name="TheLoaiSK" ColumnName="TheLoaiSK" />
+          <ScalarProperty Name="ChiTietSK" ColumnName="ChiTietSK" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="GiaVe" ColumnName="GiaVe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

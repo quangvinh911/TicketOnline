@@ -1,0 +1,42 @@
+﻿.txtemail {
+    width: 220px;
+    padding: 12px 0;
+    color: #FFF;
+    background: #102632;
+    border: 1px solid #525D74;
+    border-collapse: separate;
+    font-size: 18px;
+    font-weight: 400;
+    text-indent: 10px;
+}
+
+.submitdangky {
+    width: 100px;
+    height: 50px;
+    /*padding: 12px 30px;*/
+    color: #FFF;
+    background: #F36F36;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    /*outline: none;*/
+    margin-left: 2%;
+    text-transform: uppercase;
+}
+
+#map {
+    height: 300px;
+    width: 400px;
+    margin-top: 2%;
+}
+
+.text-white {
+    margin-left: 2%;
+}
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 12px Helvetica,Arial,sans-serif;
+}

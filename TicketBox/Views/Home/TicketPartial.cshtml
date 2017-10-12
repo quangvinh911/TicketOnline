@@ -1,0 +1,35 @@
+﻿@using TicketBox.Models;
+@model List<SuKien>
+
+@{
+    foreach (var item in Model)
+          {
+              <div class="col-lg-6 portfolio-item">
+                    <div class="card h-100">
+                        <a href="#"><img class="card-img-top" src="@item.Image" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a class="nav-link" href="@Url.Action("ChiTietSK", "ChiTietSK", new { @masuKien=item.MaSK }) ">@item.TenSK</a>
+                                     @*@Html.ActionLink(@item.TenSK, "ChiTietSK","ChiTietSK")</a>*@
+                                 @*href="/ChiTietSK/ChiTietSK">@item.TenSK></a>*@
+                            </h4>
+                            <li class=\"nav-item\">
+                               <a class=\"nav-link\">
+                                   <b>Thời Gian:</b>      @String.Format("{0:MM/dd/yyyy}", @item.NgayToChuc)   
+                                   <b>Giờ:</b> @String.Format("{0:t}", @item.GioBatDauSK) 
+                                </a>
+                            </li> 
+                            <li class=\"nav-item\">
+                                <a class=\"nav-link\">
+                                    <b> Địa Điểm: </b> @item.DiaDiem
+                                </a>
+                            </li>
+                            <li class=\"nav-item\">
+                                <a class=\"nav-link\"><b> Giá Vé: </b>@String.Format("{0:0,0 vnđ}", @item.GiaVe) 
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+          }
+}

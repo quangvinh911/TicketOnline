@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TicketOnlineModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="SuKien">
+    <Key>
+      <PropertyRef Name="MaSK" />
+    </Key>
+    <Property Name="MaSK" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="ID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="TenSK" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaDiem" Type="nvarchar" MaxLength="50" />
+    <Property Name="TheLoaiSK" Type="nvarchar" MaxLength="50" />
+    <Property Name="ChiTietSK" Type="text" />
+    <Property Name="Image" Type="nvarchar" MaxLength="50" />
+    <Property Name="GiaVe" Type="money" />
+    <Property Name="NgayToChuc" Type="date" Nullable="false" />
+    <Property Name="GioBatDauSK" Type="time" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TicketOnlineModelStoreContainer">
+    <EntitySet Name="SuKien" EntityType="Self.SuKien" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
