@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TicketOnlineModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="SuKien">
+    <Key>
+      <PropertyRef Name="MaSK" />
+    </Key>
+    <Property Name="MaSK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenSK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DiaDiem" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="TheLoaiSK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ChiTietSK" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GiaVe" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="NgayToChuc" Type="DateTime" Precision="0" Nullable="false" />
+    <Property Name="GioBatDauSK" Type="Time" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="TicketOnlineEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="SuKiens" EntityType="Self.SuKien" />
+  </EntityContainer>
+</Schema>

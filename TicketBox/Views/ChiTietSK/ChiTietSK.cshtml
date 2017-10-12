@@ -1,0 +1,13 @@
+﻿@using TicketBox.Models
+@model TicketBox.Models.SuKien
+
+@{
+    ViewBag.Title = "ChiTietSK";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div><img class="card-img-top" src="@Model.Image" alt="">   </div>
+<div>Mã sự kiện :    @Model.MaSK </div>
+<div>Tên sự kiện:     @Model.TenSK </div>
+<div>Địa chỉ:     @Model.DiaDiem </div>
+<div>Mô tả:  @Model.ChiTietSK </div>

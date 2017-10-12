@@ -1,0 +1,51 @@
+﻿a {
+    color: #000;
+}
+
+    a:hover, a:focus, a:active {
+        color: #000;
+        text-decoration: none;
+    }
+
+.margin-auto {
+    margin: 10px auto;
+}
+
+.top-nav {
+    padding: 10px 0;
+}
+
+    .top-nav a {
+        margin-right: 10px;
+        color: #999;
+    }
+
+        .top-nav a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+.modal-dialog {
+    max-width: 340px;
+}
+
+.modal-content {
+    box-shadow: 3px 3px 6px #757272;
+    background: #f7f7f7;
+    border-radius: 0px;
+}
+
+.modal-body h2 {
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.modal-links {
+    color: #999;
+    margin-right: 10px;
+}
