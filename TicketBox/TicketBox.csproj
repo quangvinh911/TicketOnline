@@ -195,11 +195,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="Assets\admin\css\2-col-portfolio.css" />
-    <Content Include="Assets\admin\css\classic-10_7.css" />
-    <Content Include="Assets\admin\css\Footercss.css" />
-    <Content Include="Assets\admin\css\half-slider.css" />
-    <Content Include="Assets\admin\css\navbarcss.css" />
+    <Content Include="Assets\admin\css\Css.2-col-portfolio.css" />
+    <Content Include="Assets\admin\css\Css.MailChimp.css" />
+    <Content Include="Assets\admin\css\Css.Footer.css" />
+    <Content Include="Assets\admin\css\Css.Half-slider.css" />
+    <Content Include="Assets\admin\css\Css.Navbarcss.css" />
     <Content Include="Assets\admin\image\person72.png" />
     <Content Include="Assets\admin\vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="Assets\admin\vendor\bootstrap\css\bootstrap-grid.min.css" />
@@ -312,6 +312,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Assets\admin\Js.mailChimp\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

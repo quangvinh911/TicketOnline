@@ -207,6 +207,5 @@ C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSD
 C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSDL\TicketBox\bin\System.Web.WebPages.xml
 C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSDL\TicketBox\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSDL\TicketBox\bin\System.Web.WebPages.Razor.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSDL\TicketBox\obj\Debug\TicketBox.csprojResolveAssemblyReference.cache
 C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSDL\TicketBox\obj\Debug\TicketBox.dll
 C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSDL\TicketBox\obj\Debug\TicketBox.pdb
