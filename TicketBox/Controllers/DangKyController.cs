@@ -19,6 +19,7 @@ namespace TicketBox.Controllers
                 return RedirectToAction("Index", "Home");
             return View();
         }
+        #region Dang_Ky
         [HttpPost]
         public ActionResult Dang_Ky(NguoiDung DK)
         {
@@ -29,26 +30,31 @@ namespace TicketBox.Controllers
             }
             return View();
         }
+        #endregion
+
         [HttpGet]
         public ActionResult DangNhap()
         {
 
             return View();
         }
-          [HttpPost]
+        #region DangNhap 
+        [HttpPost]
         public ActionResult DangNhap(FormCollection f)
         {
-              string sTenTaiKhoan = f["txtTaiKhoan"].ToString();
+            string sTenTaiKhoan = f["txtTaiKhoan"].ToString();
             string sMatKhau = f.Get("txtMatKhau").ToString();
             NguoiDung dk = db.NguoiDung.SingleOrDefault(n => n.TenTaiKhoan == sTenTaiKhoan && n.MatKhau == sMatKhau);
-              if(dk!=null)
-              {
-                  ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
-                  Session["TenTaiKhoan"] = dk;
-                  return View();
-              }
-              ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
-              return View();
+            if (dk != null)
+            {
+                ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
+                Session["TenTaiKhoan"] = dk;
+                return View();
+            }
+            ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
+            return View();
         }
+        #endregion
+
     }
 }

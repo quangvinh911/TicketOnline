@@ -16,6 +16,7 @@ namespace TicketBox.Controllers
         {
             return View();
         }
+        #region ChiTietSK
         public ViewResult ChiTietSK(string maSuKien)
         {
             SuKien sukien = db.SuKiens.SingleOrDefault(n => n.MaSK == maSuKien);
@@ -26,5 +27,7 @@ namespace TicketBox.Controllers
             }
             return View(sukien);
         }
+        #endregion
+
     }
 }
