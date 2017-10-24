@@ -1,4 +1,4 @@
-﻿@using TicketBox.Models;
+﻿@using TicketBox.Models.EF;
 @model List<SuKien>
 
 @{
@@ -6,7 +6,7 @@
           {
               <div class="col-lg-6 portfolio-item">
                     <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="@item.Image" alt=""></a>
+                        <a href="@Url.Action("ChiTietSK", "ChiTietSK", new { @masuKien=item.MaSK }) "><img class="card-img-top" src="@item.Image" alt=""></a>
                         <div class="card-body">
                             <h4 class="card-title">
                                 <a class="nav-link" href="@Url.Action("ChiTietSK", "ChiTietSK", new { @masuKien=item.MaSK }) ">@item.TenSK</a>

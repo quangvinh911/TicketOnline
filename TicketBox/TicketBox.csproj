@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -132,63 +133,16 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\DonHang.cs">
-      <DependentUpon>TicketOnlineDbContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Email.cs">
-      <DependentUpon>TicketOnlineDbContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\LoaiSK.cs">
-      <DependentUpon>TicketOnlineDbContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\LoaiVe.cs">
-      <DependentUpon>TicketOnlineDbContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NguoiDung.cs">
-      <DependentUpon>TicketBox_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SuKien.cs">
-      <DependentUpon>TicketOnlineDbContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>TicketOnlineDbContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TaiKhoan.cs">
-      <DependentUpon>TicketOnlineDbContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TicketBox_dbModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TicketBox_dbModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TicketBox_dbModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TicketBox_dbModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TicketBox_dbModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TicketBox_dbModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TicketOnlineDbContext.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TicketOnlineDbContext.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TicketOnlineDbContext.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TicketOnlineDbContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TicketOnlineDbContext.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>TicketOnlineDbContext.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Ve.cs">
-      <DependentUpon>TicketOnlineDbContext.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\EF\DonHang.cs" />
+    <Compile Include="Models\EF\Email.cs" />
+    <Compile Include="Models\EF\LoaiSK.cs" />
+    <Compile Include="Models\EF\LoaiVe.cs" />
+    <Compile Include="Models\EF\SuKien.cs" />
+    <Compile Include="Models\EF\sysdiagram.cs" />
+    <Compile Include="Models\EF\TaiKhoan.cs" />
+    <Compile Include="Models\EF\TicketDbContext.cs" />
+    <Compile Include="Models\EF\Ve.cs" />
+    <Compile Include="Models\SuKienModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -218,7 +172,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\CSSDangKy.css" />
-    <Content Include="Content\css\DangNhapcss.css" />
+    <Content Include="Content\css\CSSStyleSheet.css" />
+    <Content Include="Content\css\CSSDangNhap.css" />
+    <Content Include="Content\css\CSSStyleSheet1.css" />
     <Content Include="Content\css\StyleSheet1.css" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.css" />
     <Content Include="Content\font-awesome-4.7.0\css\font-awesome.min.css" />
@@ -228,6 +184,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images_ticket\GayQuy.jpg" />
+    <Content Include="Images_ticket\openday.png" />
     <Content Include="Images_ticket\Toeic.jpg" />
     <Content Include="Images_ticket\ve so.png" />
     <Content Include="Images_ticket\VeXe.jpg" />
@@ -248,41 +205,7 @@
     <Content Include="ClassDiagram1.cd" />
     <Content Include="ClassDiagram2.cd" />
     <Content Include="ClassDiagram3.cd" />
-    <EntityDeploy Include="Models\TicketBox_dbModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TicketBox_dbModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\TicketBox_dbModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TicketBox_dbModel.edmx</DependentUpon>
-      <LastGenOutput>TicketBox_dbModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\TicketBox_dbModel.edmx.diagram">
-      <DependentUpon>TicketBox_dbModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\TicketBox_dbModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TicketBox_dbModel.edmx</DependentUpon>
-      <LastGenOutput>TicketBox_dbModel.cs</LastGenOutput>
-    </Content>
     <Content Include="ClassDiagram4.cd" />
-    <EntityDeploy Include="Models\TicketOnlineDbContext.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TicketOnlineDbContext.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\TicketOnlineDbContext.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TicketOnlineDbContext.edmx</DependentUpon>
-      <LastGenOutput>TicketOnlineDbContext.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\TicketOnlineDbContext.edmx.diagram">
-      <DependentUpon>TicketOnlineDbContext.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\TicketOnlineDbContext.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TicketOnlineDbContext.edmx</DependentUpon>
-      <LastGenOutput>TicketOnlineDbContext.cs</LastGenOutput>
-    </Content>
     <Content Include="Areas\Admin\Views\Shared\_LayoutNoMapFt.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -304,9 +227,9 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\DangKy\DangKy.cshtml" />
     <Content Include="Views\DangNhap\DangNhap.cshtml" />
-    <Content Include="Views\TaoSuKien\TaoSuKien.cshtml" />
     <Content Include="Views\Home\TicketPartial.cshtml" />
     <Content Include="Views\ChiTietSK\ChiTietSK.cshtml" />
+    <Content Include="Views\TaoSuKien\TaoSuKien.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -23,7 +23,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <img src=" /image/ticket.png" alt="Alternate Text" height="50" width="50" />
+            <img src="/image/ticket.png" alt="Alternate Text" height="50" width="50" />
             <a class="navbar-brand" @Html.ActionLink("Ticket Online", "Index", "Home")</a>
             <div id="Tim-Kiem">
                 @using (Html.BeginForm("KqTimKiem"))
@@ -63,7 +63,7 @@
         </ol>
         <div class="carousel-inner" role="listbox">
             <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('/Images_ticket/Vietlott.png')">
+            <div class="carousel-item active" style="background-image: url('/Images_ticket/openday.png')">
                 <div class="carousel-caption d-none d-md-block">
                     @*<h3>First Slide</h3>
                         <p>This is a description for the first slide.</p>*@
@@ -97,7 +97,7 @@
 
     @RenderBody()
     <!-- begin_Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-3 bg-dark">
         @*Begin_ChiaCot*@
         <div class="row">
             @*begin_LienHe*@
@@ -187,5 +187,4 @@
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
     <script type="text/javascript">require(["mojo/signup-forms/Loader"], function (L) { L.start({ "baseUrl": "mc.us16.list-manage.com", "uuid": "24d1c3f38a6e27466eeb1e72a", "lid": "9d99d20915" }) })</script>
 </body>
-<!-- Place in the <head>, after the three links -->
 </html>

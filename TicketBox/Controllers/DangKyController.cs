@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using TicketBox.Models;
+using TicketBox.Models.EF;
 namespace TicketBox.Controllers
 {
 
     public class DangKyController : Controller
     {
-        TicketBox_dbEntities db = new TicketBox_dbEntities();
+        TicketDbContext db = new TicketDbContext();
         //
         // GET: /DangKy/
         [HttpGet]
@@ -19,42 +19,36 @@ namespace TicketBox.Controllers
                 return RedirectToAction("Index", "Home");
             return View();
         }
-        #region Dang_Ky
         [HttpPost]
-        public ActionResult Dang_Ky(NguoiDung DK)
+        public ActionResult Dang_Ky(TaiKhoan DK)
         {
             if (ModelState.IsValid)
             {
-                db.NguoiDung.Add(DK);
+                db.TaiKhoans.Add(DK);
                 db.SaveChanges();
             }
             return View();
         }
-        #endregion
-
         [HttpGet]
         public ActionResult DangNhap()
         {
 
             return View();
         }
-        #region DangNhap 
-        [HttpPost]
+          [HttpPost]
         public ActionResult DangNhap(FormCollection f)
         {
-            string sTenTaiKhoan = f["txtTaiKhoan"].ToString();
+              string sTenTaiKhoan = f["txtTaiKhoan"].ToString();
             string sMatKhau = f.Get("txtMatKhau").ToString();
-            NguoiDung dk = db.NguoiDung.SingleOrDefault(n => n.TenTaiKhoan == sTenTaiKhoan && n.MatKhau == sMatKhau);
-            if (dk != null)
-            {
-                ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
-                Session["TenTaiKhoan"] = dk;
-                return View();
-            }
-            ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
-            return View();
+            TaiKhoan dk = db.TaiKhoans.SingleOrDefault(n => n.TenTK == sTenTaiKhoan && n.MatKhau == sMatKhau);
+              if(dk!=null)
+              {
+                  ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
+                  Session["TenTaiKhoan"] = dk;
+                  return View();
+              }
+              ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
+              return View();
         }
-        #endregion
-
     }
 }

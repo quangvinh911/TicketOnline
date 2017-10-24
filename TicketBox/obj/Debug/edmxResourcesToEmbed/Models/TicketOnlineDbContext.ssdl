@@ -34,7 +34,7 @@
     <Key>
       <PropertyRef Name="MaSK" />
     </Key>
-    <Property Name="MaSK" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaSK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ID" Type="nvarchar" MaxLength="30" Nullable="false" />
     <Property Name="MaLoaiSK" Type="nvarchar" MaxLength="20" />
     <Property Name="TenSK" Type="nvarchar" MaxLength="50" />
@@ -42,8 +42,8 @@
     <Property Name="ChiTietSK" Type="nvarchar" MaxLength="500" />
     <Property Name="Image" Type="nvarchar" MaxLength="50" />
     <Property Name="GiaVe" Type="money" />
-    <Property Name="NgayToChuc" Type="date" Nullable="false" />
-    <Property Name="GioBatDauSK" Type="time" Precision="0" Nullable="false" />
+    <Property Name="NgayToChuc" Type="date" />
+    <Property Name="GioBatDauSK" Type="varchar" MaxLength="10" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -76,7 +76,7 @@
     <Property Name="MaDH" Type="nchar" MaxLength="10" Nullable="false" />
     <Property Name="MaLoaiVe" Type="nvarchar" MaxLength="20" Nullable="false" />
     <Property Name="TenVe" Type="nvarchar" MaxLength="30" />
-    <Property Name="MaSK" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="MaSK" Type="int" />
   </EntityType>
   <Association Name="FK_DonHang_TaiKhoan">
     <End Role="TaiKhoan" Type="Self.TaiKhoan" Multiplicity="1" />
@@ -139,7 +139,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Ve_SuKien">
-    <End Role="SuKien" Type="Self.SuKien" Multiplicity="1" />
+    <End Role="SuKien" Type="Self.SuKien" Multiplicity="0..1" />
     <End Role="Ve" Type="Self.Ve" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="SuKien">
@@ -150,6 +150,50 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="Sp_Account_login" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="username" Type="nvarchar" Mode="In" />
+    <Parameter Name="password" Type="varchar" Mode="In" />
+    <Parameter Name="Isvalid" Type="bit" Mode="InOut" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="Sp_Sukien_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="tensk" Type="nvarchar" Mode="In" />
+    <Parameter Name="maloaisk" Type="nvarchar" Mode="In" />
+    <Parameter Name="didiem" Type="nvarchar" Mode="In" />
+    <Parameter Name="chitiet" Type="nvarchar" Mode="In" />
+    <Parameter Name="ngaytochuc" Type="date" Mode="In" />
+    <Parameter Name="giobatdau" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="TicketOnlineModelStoreContainer">
     <EntitySet Name="DonHang" EntityType="Self.DonHang" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Email" EntityType="Self.Email" Schema="dbo" store:Type="Tables" />

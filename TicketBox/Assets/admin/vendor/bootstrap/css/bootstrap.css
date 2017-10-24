@@ -640,6 +640,8 @@ pre code {
 .row {
   display: -ms-flexbox;
   display: flex;
+  width:auto;
+
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-right: -15px;

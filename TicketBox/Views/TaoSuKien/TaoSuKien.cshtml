@@ -1,5 +1,65 @@
-﻿@{
+﻿@model TicketBox.Models.EF.SuKien
+@*@model TicketBox.Models.TicketBox_dbEntities*@
+@{
     ViewBag.Title = "TaoSuKien";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
 }
-<h2>Tao Su Kien</h2>
+
+<script src="~/Assets/admin/vendor/jquery/jquery.js"></script>
+<link href="~/Content/css/CSSDangKy.css" rel="stylesheet" />
+<link href="~/Content/css/StyleSheet1.css" rel="stylesheet" />
+<link href="~/Content/css/CSSStyleSheet1.css" rel="stylesheet" />
+<h2>Tạo Sự Kiện</h2>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <div class="login-box">
+        <div class="login-body">
+            <div class="form-group">
+                @Html.LabelFor(model => model.TenSK)
+
+                @Html.TextBoxFor(model => model.TenSK, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.TenSK)
+                @* <input type="text" placeholder="Tên sự kiện" class="form-control" />*@
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.MaLoaiSK)
+
+                @Html.TextBoxFor(model => model.MaLoaiSK, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaLoaiSK)
+                @* <input type="text" placeholder="Tên sự kiện" class="form-control" />*@
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.DiaDiem)
+
+                @Html.TextBoxFor(model => model.DiaDiem, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.DiaDiem)
+                @*<input type="text" placeholder="Địa điểm" class="form-control" />*@
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ChiTietSK)
+
+                @Html.TextBoxFor(model => model.ChiTietSK, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ChiTietSK)
+                @*<input type="text" placeholder="Chi tiết sự kiện" class="form-control" />*@
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.NgayToChuc)
+
+                @Html.TextBoxFor(model => model.NgayToChuc, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.NgayToChuc)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.GioBatDauSK)
+
+                @Html.TextBoxFor(model => model.GioBatDauSK, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.GioBatDauSK)
+            </div>
+            <div class="login-footer">
+                <p><input type="submit" value="Xác Nhận" /></p>
+                @*@Html.ActionLink("Đăng Nhập", "DangNhap", "DangNhap")*@
+            </div>
+        </div>
+    </div>
+}

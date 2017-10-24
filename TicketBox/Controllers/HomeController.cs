@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using TicketBox.Models;
+using TicketBox.Models.EF;
 
 namespace TicketBox.Controllers
 {
@@ -11,7 +11,7 @@ namespace TicketBox.Controllers
     {
         //
         // GET: /Home/
-        TicketOnlineEntities db = new TicketOnlineEntities();
+        TicketDbContext db = new TicketDbContext();
 
         public ActionResult Index()
         {

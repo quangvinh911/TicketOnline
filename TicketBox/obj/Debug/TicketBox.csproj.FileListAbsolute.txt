@@ -209,38 +209,109 @@ C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSD
 C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSDL\TicketBox\bin\System.Web.WebPages.Razor.xml
 C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSDL\TicketBox\obj\Debug\TicketBox.dll
 C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline-LoadCSDL_\TicketOnline-LoadCSDL\TicketBox\obj\Debug\TicketBox.pdb
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\TicketBox.dll.config
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\TicketBox.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\TicketBox.pdb
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\EntityFramework.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\EntityFramework.SqlServer.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\Newtonsoft.Json.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\PagedList.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\PagedList.Mvc.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Net.Http.Formatting.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Helpers.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Http.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Http.WebHost.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Mvc.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Razor.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.WebPages.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.WebPages.Razor.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\EntityFramework.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\EntityFramework.SqlServer.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\PagedList.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\PagedList.Mvc.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\Newtonsoft.Json.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Net.Http.Formatting.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Helpers.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Http.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Http.WebHost.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Mvc.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.Razor.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.WebPages.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\bin\System.Web.WebPages.Razor.xml
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\obj\Debug\TicketBox.dll
-C:\Users\Huynh Son\Desktop\DoAnNganh\New folder\TicketBox\obj\Debug\TicketBox.pdb
+E:\Do an\TicketOnline\TicketBox\bin\TicketBox.dll.config
+E:\Do an\TicketOnline\TicketBox\bin\TicketBox.dll
+E:\Do an\TicketOnline\TicketBox\bin\TicketBox.pdb
+E:\Do an\TicketOnline\TicketBox\bin\EntityFramework.dll
+E:\Do an\TicketOnline\TicketBox\bin\EntityFramework.SqlServer.dll
+E:\Do an\TicketOnline\TicketBox\bin\Microsoft.Web.Infrastructure.dll
+E:\Do an\TicketOnline\TicketBox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\Do an\TicketOnline\TicketBox\bin\Newtonsoft.Json.dll
+E:\Do an\TicketOnline\TicketBox\bin\PagedList.dll
+E:\Do an\TicketOnline\TicketBox\bin\PagedList.Mvc.dll
+E:\Do an\TicketOnline\TicketBox\bin\System.Net.Http.Formatting.dll
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Helpers.dll
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Http.dll
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Http.WebHost.dll
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Mvc.dll
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Razor.dll
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.Deployment.dll
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.dll
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.Razor.dll
+E:\Do an\TicketOnline\TicketBox\bin\EntityFramework.xml
+E:\Do an\TicketOnline\TicketBox\bin\EntityFramework.SqlServer.xml
+E:\Do an\TicketOnline\TicketBox\bin\PagedList.xml
+E:\Do an\TicketOnline\TicketBox\bin\PagedList.Mvc.xml
+E:\Do an\TicketOnline\TicketBox\bin\Newtonsoft.Json.xml
+E:\Do an\TicketOnline\TicketBox\bin\System.Net.Http.Formatting.xml
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Helpers.xml
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Http.xml
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Http.WebHost.xml
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Mvc.xml
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.Razor.xml
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.xml
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.Deployment.xml
+E:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.Razor.xml
+E:\Do an\TicketOnline\TicketBox\obj\Debug\TicketBox.csprojResolveAssemblyReference.cache
+E:\Do an\TicketOnline\TicketBox\obj\Debug\TicketBox.dll
+E:\Do an\TicketOnline\TicketBox\obj\Debug\TicketBox.pdb
+D:\Do an\TicketOnline\TicketBox\bin\TicketBox.dll.config
+D:\Do an\TicketOnline\TicketBox\bin\TicketBox.dll
+D:\Do an\TicketOnline\TicketBox\bin\TicketBox.pdb
+D:\Do an\TicketOnline\TicketBox\bin\EntityFramework.dll
+D:\Do an\TicketOnline\TicketBox\bin\EntityFramework.SqlServer.dll
+D:\Do an\TicketOnline\TicketBox\bin\Microsoft.Web.Infrastructure.dll
+D:\Do an\TicketOnline\TicketBox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Do an\TicketOnline\TicketBox\bin\Newtonsoft.Json.dll
+D:\Do an\TicketOnline\TicketBox\bin\PagedList.dll
+D:\Do an\TicketOnline\TicketBox\bin\PagedList.Mvc.dll
+D:\Do an\TicketOnline\TicketBox\bin\System.Net.Http.Formatting.dll
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Helpers.dll
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Http.dll
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Http.WebHost.dll
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Mvc.dll
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Razor.dll
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.Deployment.dll
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.dll
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.Razor.dll
+D:\Do an\TicketOnline\TicketBox\bin\EntityFramework.xml
+D:\Do an\TicketOnline\TicketBox\bin\EntityFramework.SqlServer.xml
+D:\Do an\TicketOnline\TicketBox\bin\PagedList.xml
+D:\Do an\TicketOnline\TicketBox\bin\PagedList.Mvc.xml
+D:\Do an\TicketOnline\TicketBox\bin\Newtonsoft.Json.xml
+D:\Do an\TicketOnline\TicketBox\bin\System.Net.Http.Formatting.xml
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Helpers.xml
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Http.xml
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Http.WebHost.xml
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Mvc.xml
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.Razor.xml
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.xml
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.Deployment.xml
+D:\Do an\TicketOnline\TicketBox\bin\System.Web.WebPages.Razor.xml
+D:\Do an\TicketOnline\TicketBox\obj\Debug\TicketBox.dll
+D:\Do an\TicketOnline\TicketBox\obj\Debug\TicketBox.pdb
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\TicketBox.dll.config
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\TicketBox.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\TicketBox.pdb
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\EntityFramework.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\EntityFramework.SqlServer.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\Newtonsoft.Json.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\PagedList.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\PagedList.Mvc.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Net.Http.Formatting.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Helpers.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Http.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Http.WebHost.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Mvc.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Razor.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.WebPages.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.WebPages.Razor.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\EntityFramework.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\EntityFramework.SqlServer.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\PagedList.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\PagedList.Mvc.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\Newtonsoft.Json.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Net.Http.Formatting.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Helpers.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Http.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Http.WebHost.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Mvc.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.Razor.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.WebPages.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\bin\System.Web.WebPages.Razor.xml
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\obj\Debug\TicketBox.dll
+C:\Users\Huynh Son\Desktop\DoAnNganh\TicketOnline\TicketOnline\TicketBox\obj\Debug\TicketBox.pdb

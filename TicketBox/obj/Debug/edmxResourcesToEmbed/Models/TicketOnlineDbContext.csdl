@@ -38,7 +38,7 @@
     <Key>
       <PropertyRef Name="MaSK" />
     </Key>
-    <Property Name="MaSK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaSK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="ID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="MaLoaiSK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <Property Name="TenSK" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -46,8 +46,8 @@
     <Property Name="ChiTietSK" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="Image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="GiaVe" Type="Decimal" Precision="19" Scale="4" />
-    <Property Name="NgayToChuc" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="GioBatDauSK" Type="Time" Nullable="false" Precision="0" />
+    <Property Name="NgayToChuc" Type="DateTime" Precision="0" />
+    <Property Name="GioBatDauSK" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="LoaiSK" Relationship="Self.FK_SuKien_LoaiSK" FromRole="SuKien" ToRole="LoaiSK" />
     <NavigationProperty Name="TaiKhoan" Relationship="Self.FK_SuKien_TaiKhoan" FromRole="SuKien" ToRole="TaiKhoan" />
     <NavigationProperty Name="Ves" Relationship="Self.FK_Ve_SuKien" FromRole="SuKien" ToRole="Ve" />
@@ -85,7 +85,7 @@
     <Property Name="MaDH" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
     <Property Name="MaLoaiVe" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="TenVe" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-    <Property Name="MaSK" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaSK" Type="Int32" />
     <NavigationProperty Name="DonHang" Relationship="Self.FK_Ve_DonHang" FromRole="Ve" ToRole="DonHang" />
     <NavigationProperty Name="LoaiVe" Relationship="Self.FK_Ve_LoaiVe" FromRole="Ve" ToRole="LoaiVe" />
     <NavigationProperty Name="SuKien" Relationship="Self.FK_Ve_SuKien" FromRole="Ve" ToRole="SuKien" />
@@ -151,7 +151,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_Ve_SuKien">
-    <End Role="SuKien" Type="Self.SuKien" Multiplicity="1" />
+    <End Role="SuKien" Type="Self.SuKien" Multiplicity="0..1" />
     <End Role="Ve" Type="Self.Ve" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="SuKien">
@@ -195,5 +195,59 @@
       <End Role="SuKien" EntitySet="SuKiens" />
       <End Role="Ve" EntitySet="Ves" />
     </AssociationSet>
+    <FunctionImport Name="Sp_Account_login">
+      <Parameter Name="username" Mode="In" Type="String" />
+      <Parameter Name="password" Mode="In" Type="String" />
+      <Parameter Name="Isvalid" Mode="InOut" Type="Boolean" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(TicketOnlineModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(TicketOnlineModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="Sp_Sukien_Insert">
+      <Parameter Name="tensk" Mode="In" Type="String" />
+      <Parameter Name="maloaisk" Mode="In" Type="String" />
+      <Parameter Name="didiem" Mode="In" Type="String" />
+      <Parameter Name="chitiet" Mode="In" Type="String" />
+      <Parameter Name="ngaytochuc" Mode="In" Type="DateTime" />
+      <Parameter Name="giobatdau" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
   </EntityContainer>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
 </Schema>
