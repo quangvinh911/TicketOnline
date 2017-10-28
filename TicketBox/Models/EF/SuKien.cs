@@ -17,7 +17,7 @@
         }
 
         [Key]
-        [DisplayName ("Mã sự kiện")]
+        [DisplayName("Mã sự kiện")]
         public int MaSK { get; set; }
 
         [Required]

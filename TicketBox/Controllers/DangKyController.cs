@@ -35,20 +35,20 @@ namespace TicketBox.Controllers
 
             return View();
         }
-          [HttpPost]
+        [HttpPost]
         public ActionResult DangNhap(FormCollection f)
         {
-              string sTenTaiKhoan = f["txtTaiKhoan"].ToString();
+            string sTenTaiKhoan = f["txtTaiKhoan"].ToString();
             string sMatKhau = f.Get("txtMatKhau").ToString();
             TaiKhoan dk = db.TaiKhoans.SingleOrDefault(n => n.TenTK == sTenTaiKhoan && n.MatKhau == sMatKhau);
-              if(dk!=null)
-              {
-                  ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
-                  Session["TenTaiKhoan"] = dk;
-                  return View();
-              }
-              ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
-              return View();
+            if (dk != null)
+            {
+                ViewBag.ThongBao = "Chúc mừng bạn đăng nhập thành công !";
+                Session["TenTaiKhoan"] = dk;
+                return View();
+            }
+            ViewBag.ThongBao = "Tên tài khoản hoặc mật khẩu không đúng!";
+            return View();
         }
     }
 }
