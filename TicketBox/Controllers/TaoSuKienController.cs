@@ -24,7 +24,7 @@ namespace TicketBox.Controllers
         {
             try
             {
-                if(!ModelState.IsValid)
+                if (!ModelState.IsValid)
                 {
                     var model = new SuKienModel();
                     int res = model.TaoSuKien(collec.TenSK, collec.MaLoaiSK, collec.DiaDiem, collec.ChiTietSK, collec.NgayToChuc, collec.GioBatDauSK);
@@ -36,11 +36,11 @@ namespace TicketBox.Controllers
 
                 return View(collec);
             }
-            catch 
+            catch
             {
                 return View();
             }
-           
+
         }
 
     }
